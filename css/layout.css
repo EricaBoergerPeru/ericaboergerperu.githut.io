@@ -1,0 +1,338 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Sample start files for final project - for educational purposes
+   Filename: base.css
+   
+   Name:Erica Boerger
+   Term: Spring 2022
+
+   This file contains the base styles used by all pages in the website
+
+*/
+
+/* =============================================
+	Base layout styles used by mobile devices
+	up to 480px and cascaded to larger devices 
+	unless superceded by other styles.
+   =============================================
+*/
+
+html {
+	height: 100%;
+	font-size: 14px;
+}
+img, object, embed, video {
+	max-width: 100%;
+}
+body {
+	clear: none;
+	float: none;
+ 	font-family: Georgia, Times, "Times New Roman", serif;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 100%;
+	padding-left: 4.55%;
+	padding-right: 4.55%;
+	width: 81.9%;
+}
+nav {
+	float: left;
+	margin: 6% 2% 0% 0%;
+	width: 25%;
+}
+article {
+	float: left;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 0.8em;
+	text-align: left;
+	width: 73%;
+}
+
+nav ul li {
+	font-family: 'BhuTuka Expanded One', cursive;
+	font-family: 'Dancing Script', cursive;
+	font-size: 0.8em;
+}
+
+nav ul li a {
+	color: #53ede0;
+	display: block;
+	margin-bottom: 8%;
+	text-decoration: none;
+}
+nav ul li a:visited {
+	color: #53ede0;
+}
+nav ul li a:hover {
+	background-color: #53ede0;
+	color: white;
+}
+nav ul li a:focus {
+	outline: thin dotted;
+}
+nav ul li a:hover, nav ul li a:active {
+	outline: 0;
+}
+body h1 {
+	color: #5b1fde;
+	font-family: 'BhuTuka Expanded One', cursive;
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.5em;
+	margin: 1%;
+}
+
+body article h1 {
+	font-size: 1.15em;
+}
+
+body h2 {
+	color: #53ede0;
+	font-family: 'BhuTuka Expanded One', cursive;
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.5em;
+	margin: 1%;
+}
+
+body article h2 {
+	font-size: 1.15em;
+	}
+header img {
+	float: none;
+	height: 50%;
+	margin: 0% 0% 0% 0%;
+	padding: 5%;
+	width: 50%;
+}
+body p, body address {
+	color: #696969;
+	font-size: 1em;
+ 	font-family: Georgia, Times, "Times New Roman", serif;
+	font-style: normal;
+	height: 100%;
+	margin: 3.5% 1%;
+}
+dl {
+ 	font-family: Georgia, Times, "Times New Roman", serif;
+	margin-left: 2%;
+	margin-top: 10%;
+}
+dt {
+	border-bottom: 1px solid #5b1fde;
+	display: block;
+	font-weight: bold;
+	margin: 0;
+	text-indent: 0;
+	
+	
+}
+dd {
+	display: block;
+	margin: 3% 3% 3% 3%;
+	text-indent: 0;
+}
+
+footer {
+	
+	background-color: #53ede0;
+	border: 3px outset #cc33ff;
+	box-shadow: rgb(105, 105, 105) 20px 0px 25px,  rgb(105, 105, 105) -20px 0px 25px;
+	clear: both;
+	color: white;
+	text-align: center;
+	font-size: 0.6em;
+	font-family: 'BhuTuka Expanded One', cursive;
+	font-family: 'Dancing Script', cursive;
+	margin-top: 4%;
+	padding-bottom: 20px;
+	-moz-box-shadow: rgb(105, 105, 105) 20px 0px 25px,  rgb(105, 105, 105) -20px 0px 25px;
+	-webkit-box-shadow: rgb(105, 105, 105) 20px 0px 25px,  rgb(105, 105, 105) -20px 0px 25px;
+	}
+
+article aside h1 {
+	display: none;
+}
+
+article div {
+	border-bottom: 1px solid rgb(151, 151, 151);
+}
+
+article div:first-of-type {
+	margin-top: 30px;
+}
+
+article div h1 {
+	font-size: 1em;
+	font-weight: bold;
+}
+
+article p, article address {font-family: Verdana, Geneva, sans-serif;
+	font-style: normal;
+}
+/* =============================================
+	Tablet layout styles used by devices
+	481px to 768px and cascaded to larger 
+	devices.
+   =============================================
+*/
+
+
+@media only screen and (min-width: 481px) {
+html, body {
+	font-size: 16px;
+}
+
+body {
+	clear: none;
+	float: none;
+	margin-left: auto;
+	padding-left: 1.55%;
+	padding-right: 1.55%;
+	width: 89.9%;
+}
+
+header h1 {
+   font-size: 2.2em;
+}
+
+body article h1 {
+   font-size: 1.75em;
+}
+
+article {
+	float: none;
+	margin: 0px auto;
+	width: 94%;
+}
+dl#ct_locations {
+	margin: 0px 0px 0px 20px;
+	width: 57%;
+}
+dl {
+	margin: 0 auto;
+	text-align: left;
+	width: 90%;
+}
+article img {
+	border: thin solid  #cc33ff;
+	float: right;
+	margin: 0% 2% 2% 2%;
+	width: 40%;
+}
+nav ul li {
+	border: thin solid  #cc33ff;
+	border-collapse: collapse;
+	display: table-cell;
+	margin-right: 2%;
+	text-align: center;
+	width: 15%;
+}
+nav ul li a {
+	margin-bottom: 0;
+}
+nav {
+	display: table;
+	float: none;
+	margin: 0 auto;
+	width: 96%;
+}
+nav ul {
+	display: table-row;
+	margin: 0;
+}
+nav ul li:last-of-type {
+	margin-right: 0%;
+}
+
+article ul {
+	margin-top: -20px;
+}
+
+article aside {
+	background-color: #ffdcdb;
+	border: 1px solid rgb(251, 151, 151);
+	float: right;
+	font-size: 0.9em;
+	margin: 0 0 20px 20px;
+	padding: 1%;
+	width: 35%;
+	
+	
+}
+
+article aside h1 {
+	border-bottom: 1px solid rgb(111, 111, 111);
+	display: block;
+	font-size: 1em;
+	text-align: center;	
+}
+
+article div {
+	border: 1px solid rgb(151, 151, 151);
+	float: left;
+	margin: 0% 1% 2% 1%;
+	width: 30.3%;
+}
+
+article div:first-of-type {
+	margin-top: 0%;
+}
+
+article div h1 {
+	border-bottom: 1px solid #5b1fde;
+	background-color: #ffdcdb;
+	font-weight: normal;
+	font-size: 1em;
+	text-align: right;
+}
+
+article div p {
+	font-size: 0.85em;
+	text-align: left;
+}
+
+footer {
+	font-size: 0.9em;
+}
+}
+
+
+
+/* =============================================
+	Desktop layout styles used by  devices
+	769px and larger.
+   =============================================
+*/
+
+@media only screen and (min-width: 769px) {
+html, body {
+	font-size: 20px;
+}
+
+html {
+	background-color: #696969;
+	margin: 0px auto;
+}
+body {
+	background-color: white;
+	-moz-box-shadow: rgb(204, 51, 255) 20px 0px 25px,  rgb(204, 51, 255) -20px 0px 25px;
+	-webkit-box-shadow: rgb(204, 51, 255) 20px 0px 25px,  rgb(204, 51, 255) -20px 0px 25px;
+	box-shadow: rgb(204, 51, 255) 20px 0px 25px,  rgb(204, 51, 255) -20px 0px 25px;
+	clear: none;
+	float: none;
+	margin: 0px auto auto auto;
+	max-width: 900px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	width: 88.2%;
+}
+
+article div h1 {
+	font-size: 1.1em;
+}
+
+article div p {
+	font-size: 0.95em;
+}
+
+}
